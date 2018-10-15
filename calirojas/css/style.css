@@ -1,0 +1,23 @@
+/**
+ * Place your custom styles here.
+ */
+
+body {
+    background: linear-gradient(to top, darkblue, lightblue, lightblue);
+}
+
+.field--type-image {
+    position: relative;
+}
+
+.field--type-image:after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #ccc;
+    transition: all ease .2s;
+}
+
+.field--type-image:hover:after {
+    opacity: 0;
+}
